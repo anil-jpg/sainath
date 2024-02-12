@@ -7,5 +7,7 @@ resource "aws_s3_bucket" "anilsai" {
   acl    = "private"
 
   tags = {
-    Name = "sairam"
+    Name        = "sairam"
+    Environment = "Dev"
   }
+}
