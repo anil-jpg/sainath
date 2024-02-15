@@ -2,12 +2,9 @@ provider "aws" {
     region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "anilsai" {
-  bucket = "anilsai"
-  acl    = "private"
-
+resource "aws_vpc" "demo-vpc" {
+  cidr_block = "10.0.0.0/16"
   tags = {
-    Name        = "sairam"
-    Environment = "Dev"
+    Name = "demo-vpc"
   }
 }
