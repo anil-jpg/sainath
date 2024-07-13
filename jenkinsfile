@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: '<CREDS>', url: 'https://github.com/anil-jpg/anil.git'
+                git branch: 'main', credentialsId: '<CREDS>', url: 'https://github.com/anil-jpg/sainath.git'
             }
         }
         stage('Terraform init') {
